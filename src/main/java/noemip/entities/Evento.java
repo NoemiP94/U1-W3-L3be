@@ -2,6 +2,7 @@ package noemip.entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 
 @Entity
@@ -21,6 +22,12 @@ public class Evento {
     private TipoEvento tipoEvento;
     @Column
     private int numeroMassimoPartecipanti;
+
+    //evento-->one?
+    //partecipazione-->many
+    @OneToMany(mappedBy= "event")
+    private List<Partecipazione> listaPartecipanti;
+
 
     //COSTRUTTORI
 
