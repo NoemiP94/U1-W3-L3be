@@ -17,7 +17,7 @@ public class PersonaDAO {
         transaction.begin(); //inizio transazione
         em.persist(persona); //aggiungo persona al Persistence Context
         transaction.commit(); //salvataggio in una nuova riga
-        System.out.println("Persona " + persona.getNome() + persona.getCognome() +  " aggiunta correttamente!");
+        System.out.println("Persona " + persona.getNome() + " " + persona.getCognome() +  " aggiunta correttamente!");
     }
 
     //metodo getById

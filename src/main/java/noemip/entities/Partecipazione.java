@@ -19,10 +19,11 @@ public class Partecipazione {
     //partecipazione--> many
     //aggiungere evento da classe Evento
     @ManyToOne
-    @JoinColumn(name= "event_id", nullable = false)
+    @JoinColumn(name= "event_id")
     private Evento event;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private TipoStato stato;
 
     //COSTRUTTORI

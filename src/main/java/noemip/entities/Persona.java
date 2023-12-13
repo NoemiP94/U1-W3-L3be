@@ -39,13 +39,12 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nome, String cognome, String email, LocalDate dataDiNascita, TipoSesso sesso, List<Partecipazione> listaPartecipazioni) {
+    public Persona(String nome, String cognome, String email, LocalDate dataDiNascita, TipoSesso sesso) {
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
         this.dataDiNascita = dataDiNascita;
         this.sesso = sesso;
-        this.listaPartecipazioni = listaPartecipazioni;
     }
 
     //GETTER E SETTER
