@@ -37,6 +37,10 @@ public class Partecipazione {
 
     //GETTER E SETTER
 
+    public long getId() {
+        return id;
+    }
+
     public Persona getPersona() {
         return persona;
     }
